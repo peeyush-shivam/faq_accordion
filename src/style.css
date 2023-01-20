@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+
+body {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) fixed;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg-ques{
+    display: flex;
+    width: 920px;
+    height: 520px;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: space-around;
+    align-items: center;
+    word-wrap: none;
+}
+
+.bg-ques-child{
+    flex: 1;
+}
+
+.bg-ques-child.img{
+    height: 520px;
+    width: 460px;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-size: 900px 900px;
+    background-repeat: no-repeat;
+    background-position: -500px -280px;
+}
+
+.women-desktop{
+    position: relative;
+    top: 85px;
+    overflow: hidden;
+}
+
+.women-desktop > img{
+    position: relative;
+    right: 72px;
+}
+
+.box > img{
+    height: 191px;
+    width: 184px;
+    position: relative;
+    bottom: 140px;
+    right: 92px;
+}
+
+.ques{
+    margin-bottom: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(237, 12%, 33%);
+    font-size: 13px;
+
+}
+
+.ans{
+    width: 380px;
+    color: hsl(240, 6%, 50%);
+    padding-bottom: 5px;
+}
+
+.ques:hover{
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+.bg-ques-child.quest {
+    width: 400px;
+}
+
+.q-a{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
