@@ -20,7 +20,6 @@ const App = () => {
         
       }
 
-
       { return (
                   <div key={showData.id}>
                     <div onClick = {handleClick} className='q-a'>
