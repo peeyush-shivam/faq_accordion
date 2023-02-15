@@ -19,7 +19,6 @@ const App = () => {
         }
         
       }
-
       { return (
                   <div key={showData.id}>
                     <div onClick = {handleClick} className='q-a'>
@@ -36,9 +35,6 @@ const App = () => {
       }
     }
   )
-
-
-
   return (
       <div className='card'>
           <div className='bg-ques'>
