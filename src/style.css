@@ -21,17 +21,14 @@ body {
 
 .bg-ques{
     display: flex;
-    width: 920px;
+    width: fit-content;
     height: 520px;
     background-color: white;
     border-radius: 15px;
     justify-content: space-around;
     align-items: center;
     word-wrap: none;
-}
-
-.bg-ques-child{
-    flex: 1;
+    overflow: visible;
 }
 
 .bg-ques-child.img{
@@ -54,7 +51,7 @@ body {
     right: 72px;
 }
 
-.box > img{
+.box {
     height: 191px;
     width: 184px;
     position: relative;
@@ -64,8 +61,8 @@ body {
 
 .ques{
     margin-bottom: 10px;
-    width: 400px;
-    display: flex;
+    width: 27vw;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
     color: hsl(237, 12%, 33%);
@@ -74,7 +71,7 @@ body {
 }
 
 .ans{
-    width: 380px;
+    width: 26vw;
     color: hsl(240, 6%, 50%);
     padding-bottom: 5px;
 }
@@ -85,13 +82,85 @@ body {
 }
 
 .bg-ques-child.quest {
-    width: 400px;
+    width: 27vw;
+    margin-right: 35px;
 }
 
+h1{
+    font-size: 32px;
+    position: absolute;
+    bottom: 500px;
+}
 .q-a{
-    width: 400px;
+    position: relative;
+    top: 50px;
+    width: 27vw;
     display: flex;
     flex-direction: column;
     padding: 10px 0px 10px 0px;
     border-bottom: 1px solid hsl(240, 5%, 91%);
 }
+
+@media (max-width:1080px)  { 
+
+    .bg-ques{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        position: absolute;
+    }
+    .bg-ques-child.img{
+        width: 300px;
+        height: 300px;
+        background-size: 300px 300px;
+        background-position: 0px 0px;
+        position: absolute;
+        top: -185px;
+        /* background: yellowgreen; */
+    }
+    .women-desktop{
+        overflow: visible;
+        /* background: yellow; */
+        /* background: transparent; */
+    }
+    .women-desktop > img{
+        position: relative;
+        right: 0px;
+        bottom: 40px;
+        width: 300px;
+    }
+    .box{
+        height: 105px;
+        width: 105px;
+        position: relative;
+        bottom: 95px;
+        right: 0px;
+        /* background: violet; */
+    }
+    .box > img{
+        width: 105px;
+        height: 105px;
+    }
+    .bg-ques-child.quest{
+        position: absolute;
+        width: 300px;
+        bottom: 40px;
+        margin: auto;
+    }
+    h1{
+        position: absolute;
+        bottom: 270px;
+        margin-left: 115px;
+    }
+    .ques{
+        width: 300px;
+    }
+    .ans{
+        width: 280px;
+    }
+    .q-a{
+        width: 300px;
+        position: relative;
+        top: 10px;
+    }
+ }
