@@ -71,7 +71,7 @@ body {
 }
 
 .ans{
-    width: 26vw;
+    width: 25vw;
     color: hsl(240, 6%, 50%);
     padding-bottom: 5px;
 }
@@ -83,7 +83,7 @@ body {
 
 .bg-ques-child.quest {
     width: 27vw;
-    margin-right: 35px;
+    margin-right: 75px;
 }
 
 h1{
